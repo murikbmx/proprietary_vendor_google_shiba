@@ -477,6 +477,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/shiba/proprietary/system_ext/etc/default-permissions/default-permissions-euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-euiccpixel.xml \
     vendor/google/shiba/proprietary/system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc \
     vendor/google/shiba/proprietary/system_ext/etc/init/vendor.google.whitechapel.audio.hal.parserservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.google.whitechapel.audio.hal.parserservice.rc \
+    vendor/google/shiba/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/google/shiba/proprietary/system_ext/etc/permissions/com.android.omadm.radioconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.omadm.radioconfig.xml \
     vendor/google/shiba/proprietary/system_ext/etc/permissions/com.android.qns.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.qns.xml \
     vendor/google/shiba/proprietary/system_ext/etc/permissions/com.google.android.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.camera.extensions.xml \
@@ -511,6 +512,9 @@ PRODUCT_PACKAGES += \
     libpixelimsmedia \
     vendor.google.whitechapel.audio.audioext@4.0 \
     vendor.google.whitechapel.audio.extension-V4-ndk \
+    VZWAPNLib \
+    AICorePrebuilt \
+    AppDirectedSMSService \
     CarrierSettings_signed_51.0.707712815 \
     CarrierWifi \
     ConnMO \
@@ -521,6 +525,8 @@ PRODUCT_PACKAGES += \
     DiagMon \
     EuiccGoogle \
     HardwareInfo \
+    HotwordEnrollmentOKGoogleFUSIONPro \
+    HotwordEnrollmentXGoogleFUSIONPro \
     OemDmTrigger \
     PixelCameraServices \
     TetheringEntitlement \
@@ -532,6 +538,7 @@ PRODUCT_PACKAGES += \
     EuiccGoogleOverlay \
     EuiccSupportPixel-P23 \
     EuiccSupportPixelPermissions \
+    MyVerizonServices \
     OemRilService \
     PixelDisplayService \
     PixelImsMediaService \
@@ -544,6 +551,7 @@ PRODUCT_PACKAGES += \
     ril-extension \
     libhwinfo \
     RadioConfigLib \
+    com.android.hotwordenrollment.common.util \
     com.google.android.camera.extensions \
     com.google.android.camerax.extensions \
     com.google.pixel.camera.connectivity \
