@@ -264,31 +264,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-    name: "VZWAPNLib",
-    owner: "google",
-    apk: "proprietary/product/app/VZWAPNLib/VZWAPNLib.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    product_specific: true,
-}
-
-android_app_import {
-    name: "AICorePrebuilt-aicore_20250130.00_RC01",
-    owner: "google",
-    apk: "proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
     name: "AppDirectedSMSService",
     owner: "google",
     apk: "proprietary/product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk",
@@ -364,73 +339,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02",
-    owner: "google",
-    apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "DevicePersonalizationPrebuiltPixel2023-playstore_aiai_20250306.00_RC10",
-    owner: "google",
-    apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2023-playstore_aiai_20250306.00_RC10/DevicePersonalizationPrebuiltPixel2023-playstore_aiai_20250306.00_RC10.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "DiagMon",
-    owner: "google",
-    apk: "proprietary/product/priv-app/DiagMon/DiagMon.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
     name: "EuiccGoogle",
     owner: "google",
     apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "HotwordEnrollmentOKGoogleFUSIONPro",
-    owner: "google",
-    apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleFUSIONPro/HotwordEnrollmentOKGoogleFUSIONPro.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "HotwordEnrollmentXGoogleFUSIONPro",
-    owner: "google",
-    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleFUSIONPro/HotwordEnrollmentXGoogleFUSIONPro.apk",
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -576,19 +487,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "MyVerizonServices",
-    owner: "google",
-    apk: "proprietary/system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
     name: "OemRilService",
     owner: "google",
     apk: "proprietary/system_ext/priv-app/OemRilService/OemRilService.apk",
@@ -715,15 +613,6 @@ dex_import {
     owner: "google",
     jars: [
         "proprietary/system_ext/framework/RadioConfigLib.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "com.android.hotwordenrollment.common.util",
-    owner: "google",
-    jars: [
-        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
     ],
     system_ext_specific: true,
 }
