@@ -735,6 +735,11 @@ prebuilt_etc_xml {
 
 rust_prebuilt_binary {
     name: "dump_modem",
+    arch: {
+        x86_64: {
+            enabled: false,
+        },
+    },
     owner: "google",
     target: {
         android_arm64: {
@@ -760,6 +765,11 @@ rust_prebuilt_binary {
 
 rust_prebuilt_binary {
     name: "gpuflag",
+    arch: {
+        x86_64: {
+            enabled: false,
+        },
+    },
     owner: "google",
     target: {
         android_arm64: {
@@ -4036,6 +4046,11 @@ cc_prebuilt_library_shared {
 
 rust_prebuilt_dylib {
     name: "libgpuflag_aconfig_rust",
+    arch: {
+        x86_64: {
+            enabled: false,
+        },
+    },
     owner: "google",
     target: {
         android_arm64: {
